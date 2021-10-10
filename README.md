@@ -1,4 +1,4 @@
-# ![hooks-app](https://raw.githubusercontent.com/alexandercddev/crowdfunding-product/master/src/assets/images/preview.jpg)
+# ![hooks-app](https://raw.githubusercontent.com/alexandercddev/crowdfunding-product/master/src/assets/images/preview-b.jpg) 
 # Crowdfunding Product
 <table>
 <tr>
