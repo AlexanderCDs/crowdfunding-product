@@ -1,0 +1,108 @@
+/**
+ * @author: alexandercd
+ * @date: 09/octubre/2021
+ * @description: 
+**/
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+$moderateCyan: hsl(176, 50%, 47%);
+$darkCyan: hsl(176, 72%, 28%);
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 48%);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+p, span, li, a {
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.stats {
+    display: flex; 
+}
+
+.btn { 
+    cursor: pointer;
+    font-weight: bold;
+    color: $darkGray;
+    border: none;
+    border-radius: 30px;
+    padding: {
+        left: 30px;
+        top: 15px;
+        bottom: 15px;
+        right: 30px;
+    };
+    margin: {
+        left: 5px;
+        top: 5px;
+        bottom: 5px;
+    };
+
+    &:hover{
+        box-shadow: 5px 5px 10px $darkGray;
+    }
+
+    &.btn-primary {
+        background-color: $darkCyan;
+        color: white;
+    }
+} 
+
+.check {  
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-weight: bold;
+    color: $darkGray;
+    border: none;
+    border-radius: 30px;
+    padding: {
+        left: 30px;
+        top: 15px;
+        bottom: 15px;
+        right: 30px;
+    };
+    margin: {
+        left: 5px;
+        top: 5px;
+        bottom: 5px;
+    };
+
+    &:hover{
+        box-shadow: 5px 5px 10px $darkGray;
+    } 
+
+    & label {
+        cursor: pointer;
+        padding-left: 30px;
+    }
+
+    &::before {
+        content: url('../svgs/icon-bookmark.svg');
+        width: 25px;
+        height: 25px;
+        position: absolute; 
+        margin: {
+            top: -19px;
+            left: -30px;
+        };
+    }
+} 
+
+.check input[type="checkbox"] {
+    display: none;
+    opacity: 0.01; 
+
+   
+}
+  
+.bookmark input[type="checkbox"]:checked+label {
+    background: $darkCyan; 
+}

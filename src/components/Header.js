@@ -33,7 +33,7 @@ const Header = ({title, src, width, height}) => {
                     height={height}
                 ></img>
             </div>
-            <div>
+            <nav>
                 <ul>
                     {items.map( (item, index) => (
                         <li key={item.to}>
@@ -41,7 +41,7 @@ const Header = ({title, src, width, height}) => {
                         </li>
                     ) )}
                 </ul>
-            </div>
+            </nav>
         </header>
     );
 }
