@@ -4,13 +4,15 @@
  * @description: 
 **/
 import React from 'react';
+import BookmarkCheck from './BookmarkCheck';
+import StatsItem from './StatsItem';
 import Header from './Header';
 
 const Corwdfund = () => {
     return (
         <>
             <Header></Header>
-            <div className="container">
+            <section className="container">
                 <div className="card">
                     <div className="card-content">
                         <h2 className="title">
@@ -22,22 +24,39 @@ const Corwdfund = () => {
                         <div className="stats">
                             <button className="btn btn-primary">
                                 Back this projecty
-                            </button> 
-                            <button className="btn btn-">
-                                Back this projecty
-                            </button> 
-                            <div className="check bookmark"> 
-                                <input type="checkbox" value="false" id="bookmark"/>
-                                <label for="bookmark">Bookmark</label>
-                            </div> 
+                            </button>  
+                            <BookmarkCheck 
+                                value={false} 
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="card">
-
+                    <div className="card-content">
+                        <div className="stats">
+                            <StatsItem 
+                                title="$89,914"
+                                text="of $11000.000 backed"
+                            />
+                            <StatsItem 
+                                title="5,007"
+                                text="total backers"
+                            />
+                            <StatsItem 
+                                title="56"
+                                text="day left"
+                            />  
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-item">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
