@@ -24,17 +24,17 @@ const items = [
 
 const Header = ({title, src, width, height}) => {
     return (
-        <header>
-            <div>
-                <img 
-                    alt={title}
-                    src={src}
-                    width={width}
-                    height={height}
-                ></img>
-            </div>
+        <header> 
             <nav>
-                <ul>
+                <div className="nav-left">
+                    <img 
+                        alt={title}
+                        src={src}
+                        width={width}
+                        height={height}
+                    ></img>
+                </div>
+                <ul className="nav-right">
                     {items.map( (item, index) => (
                         <li key={item.to}>
                             <a href={`#${item.to}`}>{item.name}</a>

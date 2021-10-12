@@ -5,10 +5,10 @@
 **/
 import React from 'react';
 import ReactDOM from 'react-dom'; 
-import Corwdfund from './components/Corwdfund';
+import CrowdfundApp from './components/CrowdfundApp';
 import './assets/styles/index.scss';
 
 ReactDOM.render(
-  <Corwdfund />,
+  <CrowdfundApp />,
   document.getElementById('root')
 );

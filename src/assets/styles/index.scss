@@ -22,6 +22,11 @@ p, span, li, a {
 
 li {
     list-style-type: none;
+    &>a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
 
 .stats {
@@ -34,25 +39,36 @@ li {
     color: $darkGray;
     border: none;
     border-radius: 30px;
+    height: 56px;
     padding: {
         left: 30px;
-        top: 15px;
-        bottom: 15px;
+        top: auto;
+        bottom: auto;
         right: 30px;
     };
     margin: {
         left: 5px;
         top: 5px;
         bottom: 5px;
-    };
-
-    &:hover{
-        box-shadow: 5px 5px 10px $darkGray;
-    }
+    }; 
 
     &.btn-primary {
-        background-color: $darkCyan;
+        background-color: $moderateCyan;
         color: white;
+
+        &:hover {
+            box-shadow: 5px 5px 10px $darkGray; 
+            background-color: $darkCyan;
+        }
+    }
+
+    &.btn-disbaled {
+        background-color: $darkGray;
+        color: white;
+        opacity: 0.7;
+        &:hover{
+            box-shadow: none;   
+        }
     }
 } 
 
@@ -65,6 +81,7 @@ li {
     color: $darkGray; 
     border-radius: 30px; 
     margin: 5px 5px 5px; 
+    height: 56px;
 
     &>span{
         &.icon {
@@ -101,3 +118,72 @@ input[type="checkbox"]:checked+label>span {
         }
     }
 } 
+
+.disbaled {
+    opacity: 0.7;
+}
+
+section {
+    background-color: hsla(0, 0%, 48%, 0.1);
+}
+
+/** Header **/
+header {
+    width: 100%;    
+    height: 400px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/image-hero-desktop.jpg');
+}
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+}
+
+.nav-right {
+    display: flex;
+}
+
+li> a {
+    padding: 5px;
+}
+
+.nav-left {
+    padding-left: 30px;
+}
+
+/** Card **/
+.card {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 10px; 
+    };
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.card> div.card-image-logo {
+    margin-top: -50px;
+}
+
+.card-head {
+    margin-top: -80px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/** Card Item **/
+
+/**  **/
