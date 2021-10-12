@@ -136,11 +136,19 @@ header {
     background-image: url('../images/image-hero-desktop.jpg');
 }
 
-nav { 
+nav {   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 2em 3em;
-}
+
+    max-width: 1200px; 
+    align-items: center;
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 10px; 
+    };
+} 
 
 .nav-right {
     display: flex;
