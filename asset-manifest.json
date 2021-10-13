@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crowdfunding-product/static/css/main.c7a30330.chunk.css",
+    "main.css": "/crowdfunding-product/static/css/main.d1b5d4ff.chunk.css",
     "main.js": "/crowdfunding-product/static/js/main.e640b7f7.chunk.js",
     "main.js.map": "/crowdfunding-product/static/js/main.e640b7f7.chunk.js.map",
     "runtime-main.js": "/crowdfunding-product/static/js/runtime-main.8a180887.js",
@@ -8,17 +8,17 @@
     "static/js/2.f10a9c31.chunk.js": "/crowdfunding-product/static/js/2.f10a9c31.chunk.js",
     "static/js/2.f10a9c31.chunk.js.map": "/crowdfunding-product/static/js/2.f10a9c31.chunk.js.map",
     "index.html": "/crowdfunding-product/index.html",
-    "static/css/main.c7a30330.chunk.css.map": "/crowdfunding-product/static/css/main.c7a30330.chunk.css.map",
+    "static/css/main.d1b5d4ff.chunk.css.map": "/crowdfunding-product/static/css/main.d1b5d4ff.chunk.css.map",
     "static/js/2.f10a9c31.chunk.js.LICENSE.txt": "/crowdfunding-product/static/js/2.f10a9c31.chunk.js.LICENSE.txt",
     "static/media/icon-bookmark.7777f8ec.svg": "/crowdfunding-product/static/media/icon-bookmark.7777f8ec.svg",
-    "static/media/index.scss": "/crowdfunding-product/static/media/image-hero-desktop.631209c1.jpg",
+    "static/media/index.scss": "/crowdfunding-product/static/media/image-hero-mobile.d4f477d4.jpg",
     "static/media/logo-mastercraft.dca2a831.svg": "/crowdfunding-product/static/media/logo-mastercraft.dca2a831.svg",
     "static/media/logo.e6f12bc6.svg": "/crowdfunding-product/static/media/logo.e6f12bc6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8a180887.js",
     "static/js/2.f10a9c31.chunk.js",
-    "static/css/main.c7a30330.chunk.css",
+    "static/css/main.d1b5d4ff.chunk.css",
     "static/js/main.e640b7f7.chunk.js"
   ]
 }
