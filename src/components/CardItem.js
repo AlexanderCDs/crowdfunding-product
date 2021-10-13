@@ -3,17 +3,17 @@ import React from 'react'
 export const CardItem = ({ title, titleRight, paragraph, number = 0, handleClick, active=true}) => {
     return (
         <div className={`card-item ${!active ? 'disbaled' : ''}`}> 
-            <div className="card-item-title">
-                <h3> { title } </h3>
-                <span> { titleRight } </span>
+            <div className="row card-item-title">
+                <h4> { title } </h4>
+                <span className="price"> { titleRight } </span>
             </div>
-            <p> { paragraph } </p>
-            <div className="card-footer"> 
-                <div className="col left"> 
-                    <h2> { number } </h2>
+            <p className="description"> { paragraph } </p>
+            <div className="row card-footer"> 
+                <div className="col"> 
+                    <span className="number"> { number } </span>
                     <span>left</span>
                 </div>
-                <div className="col right">
+                <div className="col">
                     <button 
                         className={`btn btn-${active ? 'primary' : 'disabled'}`}
                         onClick={handleClick}
