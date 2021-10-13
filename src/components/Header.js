@@ -42,6 +42,7 @@ const Header = ({title, src, width, height}) => {
                             </li>
                         ) )}
                     </ul>
+                    <div className="hamburger"> </div>
                 </nav>
             </div>
         </header>

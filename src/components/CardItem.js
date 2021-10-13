@@ -13,7 +13,7 @@ export const CardItem = ({ title, titleRight, paragraph, number = 0, handleClick
                     <span className="number"> { number } </span>
                     <span>left</span>
                 </div>
-                <div className="col">
+                <div className="col col-btn">
                     <button 
                         className={`btn btn-${active ? 'primary' : 'disabled'}`}
                         onClick={handleClick}

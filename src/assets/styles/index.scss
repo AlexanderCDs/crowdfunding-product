@@ -124,7 +124,7 @@ input[type="checkbox"] {
     opacity: 0.7;
 }
 
-section {
+body {
     background-color: hsla(0, 0%, 48%, 0.1);
 }
 
@@ -296,3 +296,75 @@ p, span {
     font-size: 14px;
 }
 /**  **/
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+    nav {     
+        padding-left: 20px;   
+        padding-top: 30px;
+    } 
+
+    .nav-left {
+        padding: 0px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hamburger {
+        content: url('../svgs/icon-hamburger.svg');
+    }
+
+    .label {
+        display: none;
+    }
+
+    .card {
+        margin: {
+            left: 20px;
+            right: 20px;
+        };
+    }
+
+    .card-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-item {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle {
+        border-top-width: 30px;
+        border: {
+            left: none !important;
+            right: none !important; 
+        }; 
+
+        &::after,
+        &::before {
+            content: ' ';
+            height: 2px;
+            width: 30%;
+            background-color: hsla(0, 0%, 48%, 0.2);
+        }
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .col-btn {
+        margin-top: 30px;
+    }
+
+    .price {
+        margin-top: 10px;
+    }
+}
