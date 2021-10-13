@@ -298,6 +298,9 @@ p, span {
 /**  **/
 
 @media screen and (min-width: 100px) and (max-width: 450px) {
+    header { 
+        background-image: url('../images/image-hero-mobile.jpg');
+    }
     nav {     
         padding-left: 20px;   
         padding-top: 30px;
